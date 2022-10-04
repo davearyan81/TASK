@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fc74362628.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="hhtps://unpkg.com/swiper@7/swiper-bumdle.min.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <di v class="navbar">
+                <div class="logo">
+                    <img src="" alt="" width="90px" height="80px">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Men</a>
+
+                            <ul class="dropdown">
+                                <li><a href="#">Sneakers</a></li>
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Dennim</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Kids</a></li>
+                        <li><a href="">Home & Living</a></li>
+                        <li><a href="">Beauty</a></li>
+                        <li><a href="">Studio</a></li>
+                    </ul>
+                </nav>
+                <div class="iframe">
+                    <a href=""><i class="fa-light fa fa-2x fa-bag-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa fa-2x fa-user"></i></a>
+                    <a href=""><i class="fa-sharp fa fa-2x fa-solid fa-heart"></i></a>
+                </div>
+        </div>
+        <div class="statement">
+            <div class="st1">
+                <h1>Find your style here</h1>
+                <br>
+                <P>“Style is a way to say who you are without having to speak.” <br><span>– Rachel Zoe</span></P>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="st1">
+                <img src="./Images/cute2.png">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--                        sales                                    -->
+    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-220329e8-0fe4-4a2f-94ba-f34070048804"></div> -->
+    <div class="br">
+        <h2>get SOULED up with us</h2>
+    </div>
+    <div class="brand-logo">
+        <img src="./Images/brand logo/logo nike.png" alt="" height="300px" width="400px">
+        <img src="./Images/brand logo/adilogo.png" alt="">
+        <img src="./Images/brand logo/clarks.png" alt="" height="300px" width="400px">
+        <img src="./Images/brand logo/asics.png" alt="" height="300px" width="400px">
+    </div>
+
+    <!-- Ctaegories -->
+    <div class="catheader">
+
+    </div>
+    <div class="sneaker">
+        <div class="baner">
+            <h2>Sale</h2>
+            <h3>Flate</h3>
+            <h2>30% OFF</h2>
+        </div>
+        <div class="banerimg">
+            <img src="./Images/shoe-product-photography-removebg-preview.png" alt="">
+        </div>
+    </div>
+
+    <div class="tshirts">
+        <div class="baner2">
+            <h2>Sale</h2>
+            <h1>Flate 40%</h1>
+            <h3>off</h3>
+        </div>
+        <div class="tshirtimg">
+            <img src="./Images/t2.avif" alt="">
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa fa-2x fa-instagram"></i></a>
+
+
+            <a href="https://in.pinterest.com/"><i class="fa-brands fa fa-2x fa-pinterest"></i></a>
+
+            <a
+                href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9050515%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw-L-ZBhB4EiwA76YzOeuPEUQCZuDoY0OVbOAu3t3WOCqUauoOUtHTsC2ExgPgoCpRCoFOqxoCzkQQAvD_BwE"><i
+                    class="fa-brands fa fa-2x fa-facebook"></i></a>
+
+
+        </div>
+    </footer>
+</body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>
