@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    const str = '5 57 23 23 7 2 78 6';
+    const pickGreatestAndSmallest = (str = '') => {
+        const strArr = str.split(' ');
+        let creds = strArr.reduce((acc, val) => {
+            let { greatest, smallest } = acc;
+            greatest = Math.max(val, greatest);
+            smallest = Math.min(val, smallest);
+            return { greatest, smallest };
+        }, {
+            greatest: -Infinity,
+            smallest: Infinity
+        });
+        return `${creds.greatest} ${creds.smallest}`;
+    };
+    document.write(pickGreatestAndSmallest(str));
+</script>
+
+</html>

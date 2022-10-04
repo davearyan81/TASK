@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./academicform.css">
+    <title>Academic Form</title>
+</head>
+
+<body>
+
+
+    <h1><span>Academic Form</span></h1>
+    <p>Enter your information for your right academic year</p>
+
+
+    <form action="">
+
+        <label for="fname">Full Name:</label>
+        <input type="text" id="fname" placeholder="Enter Your Name" required="required">
+
+        <label for="E-mail">E-mail</label>
+        <input type="email" name="" id="E-mail" placeholder="E-mail" required>
+
+        <label for="Bdate">Birthdate:</label>
+        <input type="date" name="" id="Bdate" placeholder="" required>
+
+        <label for="Gender">Gender:</label>
+        <select name="Gender" id="Gender">
+            <option value="select">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+
+        <label for="age">Age(Optional):</label>
+        <input type="number" id="" placeholder="Age">
+
+        <label for="Admitype">Admission Type:</label>
+        
+
+        <label for="Yrstudy">Year of study :</label>
+      
+        <label for="status">Academic Year:</label>
+        <input type="radio" name="status" value="Regular" id="Regular">Regular
+        <br> <input type="radio" name="status" value="Regular" id="ATKT">ATKT
+        <br> <input type="radio" value="Regular" name="status" id="Year Drop">Year Drop
+
+        <label for="branch">Branch :</label>
+        <select name="" id="">
+            <option value="">Select Branch</option>
+            <option value="com">Computer Engineering</option>
+            <option value="Ch">Chemical Engineering</option>
+            <option value="Ec">Electrical Engineeirng</option>
+            <option value="ph">Pharamaceutical</option>
+            <option value="CV">Civil Engineeirng</option>
+        </select>
+
+        <label for="intrest">Intrest/Hobbies:</label>
+        <textarea name="" id="" cols="60" rows="10" placeholder="Enter Your Intrests/Hobbies.."></textarea>
+
+        <label for="Check">I Agree colege rules & regulations [ Check to apply ]</label>
+        <input type="checkbox" name="check" value="Yes" id="Yes">Yes
+        <br> <input type="checkbox" name="check" value="" id="No">No
+        <br>
+        <button id="Submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

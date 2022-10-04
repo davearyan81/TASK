@@ -1,0 +1,16 @@
+/* *
+{
+    box-sizing: border-box;
+}
+.Im::after
+{
+content: "";
+clear: both;
+display: table;
+}
+.a
+{
+    
+    float: left;
+    width: 25%;
+`

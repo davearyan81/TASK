@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./academicform2.css">
+    <title>My Example</title>
+
+
+</head>
+
+<body>
+
+    <h1><span>Academic Form</span></h1>
+    <p class="para">Enter your information for your right academic year</p>
+
+    <form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="">
+
+        <p>
+            <label>Full Name
+                <input type="text" name="customer_name" required placeholder="Full Name" id="fname">
+            </label>
+        </p>
+
+        <p>
+            <label>E-mail
+                <input type="email" name="Email" placeholder="E-mail" required>
+            </label>
+        </p>
+
+        
+            <div class="form-group">
+                <label>Birth date <small class="text-muted"></small>
+                   <br> <input class="form-control js-field--dob date-mask" id="DOB" name="DOB" type="text" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Age
+                    <input class="form-control js-field--age" id="Age" name="Age" type="text" readonly>
+                </label>
+            </div>
+            <hr>
+        
+        <!-- <p>
+            <label>Birthdate
+                <br> <input type="date" name="birthdate" required>
+            </label>
+        </p>
+      
+        <p>
+            <label>Age:
+                <br> <input type="text" id="age" name="Age" placeholder="Age">
+            </label>
+        </p> -->
+
+        <fieldset>
+            <legend>Please Select Gender :</legend>
+            <p><label class="choice"> <input type="radio" name="Gender" required value="car">Male</label></p>
+            <p><label class="choice"> <input type="radio" name="Gender" required value="van">Female</label></p>
+            <p><label class="choice"> <input type="radio" name="Gender" required value="tuktuk">Other</label></p>
+        </fieldset>
+
+
+        <p>
+            <label>Adimission Type:
+                <select name="" id="Admitype">
+                    <option value="select">Select the admission type</option>
+                    <option value="MQ">MQ</option>
+                    <option value="ACPC">ACPC</option>
+                    <option value="JEE">JEE</option>
+                </select>
+        </p>
+
+        <p>
+            <label>Year of Study:
+                <select id="Yrstudy">
+                    <option value="">Select Current year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+
+            </label>
+        </p>
+
+        <fieldset>
+            <label>Academic Status:</label>
+            <p><label class="choice"> <input type="radio" name="status" required value="Regular">Regular</label></p>
+            <p><label class="choice"> <input type="radio" name="status" required value="ATKT">ATKT</label></p>
+            <p><label class="choice"> <input type="radio" name="status" required value="Year">Year Drop</label></p>
+        </fieldset>
+
+        <p>
+            <label>Branch:
+                <select id="Branch">
+                    <option value="">Select Branch</option>
+                    <option value="com">Computer Engineering</option>
+                    <option value="Ch">Chemical Engineering</option>
+                    <option value="Ec">Electrical Engineeirng</option>
+                    <option value="ph">Pharamaceutical</option>
+                    <option value="CV">Civil Engineeirng</option>
+                </select>
+
+            </label>
+        </p>
+
+        <p>
+            <label>Intrests/Hobbies:
+                <textarea name="" id="" cols="60" rows="10" placeholder="Enter Your Intrests/Hobbies.."></textarea>
+            </label>
+        </p>
+
+        <p><button class="btn">Submit</button></p>
+
+    </form>
+
+    <script>
+        $('.date-mask').inputmask('mm/dd/yyyy');
+
+            var handlers = {
+                calculateAge: function (dob) {
+                    if (!dob) {
+                        return;
+                    }
+
+                    var ageDifMs = Date.now() - new Date(dob).getTime();
+                    var ageDate = new Date(ageDifMs);
+
+                    return Math.abs(ageDate.getUTCFullYear() - 1970);
+                },
+                populateAge: function () {
+                    var dob = $('.js-field--dob').val();
+                    var age = handlers.calculateAge(dob);
+                    $('.js-field--age').val(age);
+                },
+            
+                }
+        
+    </script>
+
+
+    // function create_account() {
+    // var n = document.getElementById("fname").value;
+    // var e = document.getElementById("e1").value;
+    // var p = document.getElementById("p1").value;
+    // var cp = document.getElementById("p2").value;
+    // //Code for password validation
+    // var letters = /^[A-Za-z]+$/;
+    // var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    // //other validations required code
+    // if (n == '' || e == '' || p == '' || cp == '') {
+    // alert("Enter each details correctly");
+    // }
+    // else if (!letters.test(fname)) {
+    // alert('Name is incorrect must contain alphabets only');
+    // }
+    // else if (!email_val.test()) {
+    // alert('Invalid email format please enter valid email id');
+    // }
+
+    // else if (document.getElementById("p1").value.length > 12) {
+    // alert("Password maximum length is 12");
+    // }
+    // else if (document.getElementById("p1").value.length < 6) { // alert("Password minimum length is 6"); // } // else
+        { // alert("Your account has been created successfully... Redirecting to JavaTpoint.com"); //
+        window.location="https://www.javatpoint.com/" ; // } // } </body>
+
+</html>

@@ -1,0 +1,33 @@
+#image1
+{
+    width: 30%;
+    padding: 1rem;
+    /* border: 3px dotted navy; */
+    margin: auto;
+    text-align: center;
+}
+#image1:hover
+{
+    -webkit-filter: blur(3px);
+    filter: blur(0.7px);
+background-color: rgba(193, 220, 232, 0.918);
+
+    
+}
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}   
+

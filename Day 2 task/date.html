@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./date.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div><label for="birth_date">Birth Date: </label>
+        <input type="date" onchange="calculateAge()" id="birth_date" />
+    </div>
+    <div id="age" style="padding-top:2em;"></div>
+</body>
+<script>
+
+    function calculateAge() {
+        var x = document.getElementById("birth_date").value;
+        console.log('birth_date');
+        console.log(x);
+        const now = new Date();
+        const diff = Math.abs(now - date);
+        const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+        return age
+    }
+
+    var picker = new Pikaday({
+        field: document.getElementById('birth_date'),
+        yearRange: [1900, 2020],
+        onSelect: function (date) {
+            let age = calculateAge(date);
+            document.getElementById('age').innerHTML = "age: " + age;
+        }
+    });
+
+</script>
+
+</html>

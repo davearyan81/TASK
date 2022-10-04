@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+ body
+{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 4;
+    
+}
+      
+
+
+
+/* Styling */
+
+h1 {
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+}
+
+form {
+/* background: hsla(165, 53%, 73%, 1); */
+
+    /* background: linear-gradient(90deg, hsla(165, 53%, 73%, 1) 100%, hsla(92, 55%, 62%) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(165, 53%, 73%, 1) 100%, hsla(92, 55%, 62%) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(165, 53%, 73%, 1) 100%, hsla(92, 55%, 62%) 100%); */
+    color: rgb(255, 175, 101);
+    background-color: rgb(234, 238, 241);
+    height: 80%;
+    padding: 2px;
+    padding-left: 1rem;
+    font-family: 'Signika Negative', sans-serif;
+    width: 29%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px;
+    border: 2px solid red;
+}
+input
+{
+    color: black;
+    font-size: 1rem;
+    /* border-color: darkblue; */
+    padding-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 2px;
+    background-color: rgb(237, 244, 244);
+}
+
+label {
+  
+    width: 10px;
+    font-size: 1rem;
+    padding:0.5rem;
+    display: block;
+}
+
+/* Butoon  */
+
+button
+{
+    border-radius: 5px;
+    font-size: 1rem;
+    color: rgb(236, 204, 102);
+    border-color: orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+input::placeholder
+{
+
+    font-size: 1rem;
+    color: brown;
+    font-family: 'Cabin', sans-serif;
+}
+
+option
+
+{
+    border-radius: 5px;
+    font-family: 'Signika Negative', sans-serif;
+    background-color: rgb(252, 220, 193);
+    color: rgb(26, 26, 26);
+}
+
+textarea
+{
+    border-radius: 5px;
+}

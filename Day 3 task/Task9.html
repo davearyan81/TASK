@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aphpy</title>
+</head>
+<body>
+    <script>
+        const str = Wind
+        const moveCapitalToFront = (str = '') => {
+            let capitalIndex = 0;
+            const newStrArr = [];
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] !== str[i].toLowerCase()) {
+                    newStrArr.splice(capitalIndex, 0, str[i]);
+                    capitalIndex++;
+                } else {
+                    newStrArr.push(str[i]);
+                };
+            };
+            return newStrArr.join('');
+        };
+        document.write(moveCapitalToFront(str));
+    </script>
+</body>
+
+</html>
